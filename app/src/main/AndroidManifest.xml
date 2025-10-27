@@ -1,12 +1,13 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:allowBackup="true"
         android:label="WakacaW Kernel Manager"
         android:icon="@mipmap/ic_launcher"
         android:theme="@style/Theme.Wakacaw">
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -23,5 +24,7 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
+
     </application>
+
 </manifest>
